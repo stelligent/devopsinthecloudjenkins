@@ -45,7 +45,11 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo ${test_InstanceIPAddress}</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers>
     <com.syncapse.jenkinsci.plugins.awscloudformationwrapper.CloudFormationBuildWrapper>
@@ -55,7 +59,7 @@
           <description>test stack</description>
           <cloudFormationRecipe>infrastructure/templates/target.template</cloudFormationRecipe>
           <parameters></parameters>
-          <timeout>0</timeout>
+          <timeout>1800</timeout>
           <awsAccessKey>AKIAIJXZCNIQUARWL25A</awsAccessKey>
           <awsSecretKey>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</awsSecretKey>
           <autoDeleteStack>false</autoDeleteStack>
