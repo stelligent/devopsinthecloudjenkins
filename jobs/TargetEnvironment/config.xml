@@ -47,5 +47,20 @@
   <concurrentBuild>false</concurrentBuild>
   <builders/>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <com.syncapse.jenkinsci.plugins.awscloudformationwrapper.CloudFormationBuildWrapper>
+      <stacks>
+        <com.syncapse.jenkinsci.plugins.awscloudformationwrapper.StackBean>
+          <stackName>test</stackName>
+          <description>test stack</description>
+          <cloudFormationRecipe>infrastructure/templates/target.template</cloudFormationRecipe>
+          <parameters></parameters>
+          <timeout>0</timeout>
+          <awsAccessKey>AKIAIJXZCNIQUARWL25A</awsAccessKey>
+          <awsSecretKey>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</awsSecretKey>
+          <autoDeleteStack>false</autoDeleteStack>
+        </com.syncapse.jenkinsci.plugins.awscloudformationwrapper.StackBean>
+      </stacks>
+    </com.syncapse.jenkinsci.plugins.awscloudformationwrapper.CloudFormationBuildWrapper>
+  </buildWrappers>
 </project>
