@@ -51,7 +51,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>bundle install</command>
+      <command>ruby -v
+bundle install</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
       <command>rake db:migrate
