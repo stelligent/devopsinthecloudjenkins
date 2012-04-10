@@ -75,8 +75,8 @@
           <cloudFormationRecipe>infrastructure/templates/target.template</cloudFormationRecipe>
           <parameters></parameters>
           <timeout>1800</timeout>
-          <awsAccessKey>AKIAIJXZCNIQUARWL25A</awsAccessKey>
-          <awsSecretKey>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</awsSecretKey>
+          <awsAccessKey>$AWS_ACCESS_KEY</awsAccessKey>
+          <awsSecretKey>$AWS_SECRET_ACCESS_KEY</awsSecretKey>
           <autoDeleteStack>false</autoDeleteStack>
         </com.syncapse.jenkinsci.plugins.awscloudformationwrapper.StackBean>
       </stacks>
