@@ -76,7 +76,7 @@ ruby /usr/share/tomcat6/sqs_send_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECR
           <description>test stack</description>
           <cloudFormationRecipe>infrastructure/templates/target.template</cloudFormationRecipe>
           <parameters></parameters>
-          <timeout>1800</timeout>
+          <timeout>2500</timeout>
           <awsAccessKey>$AWS_ACCESS_KEY</awsAccessKey>
           <awsSecretKey>$AWS_SECRET_ACCESS_KEY</awsSecretKey>
           <autoDeleteStack>false</autoDeleteStack>
