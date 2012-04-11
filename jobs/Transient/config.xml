@@ -18,10 +18,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>#ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY
+      <command>$current_stack_name=`ruby /usr/share/tomcat6/sqs_receive_message.rb CloudFormationStacks $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY`
+echo $current_stack_name
 
-foobar=`ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY`
-echo $foobar</command>
+/opt/aws/apitools/cfn/bin/cfn-delete-stack --access-key-id $AWS_ACCESS_KEY --secret-key $AWS_SECRET_ACCESS_KEY --stack-name $current_stack_name --force</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
