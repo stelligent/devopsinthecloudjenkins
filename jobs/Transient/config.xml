@@ -18,9 +18,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY
+      <command>#ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY
 
-foobar=ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY
+foobar=`ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY`
 echo $foobar</command>
     </hudson.tasks.Shell>
   </builders>
