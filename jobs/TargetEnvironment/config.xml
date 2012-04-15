@@ -53,7 +53,16 @@ ruby /usr/share/tomcat6/sqs_send_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECR
 ruby /usr/share/tomcat6/sqs_send_message.rb CloudFormationStacks $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY ${test_StackName}</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>Deployment</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
   <buildWrappers>
     <com.syncapse.jenkinsci.plugins.awscloudformationwrapper.CloudFormationBuildWrapper>
       <stacks>
