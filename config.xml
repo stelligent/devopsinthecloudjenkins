@@ -25,6 +25,25 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
     </hudson.model.AllView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+      <owner class="hudson" reference="../../.."/>
+      <name>DeploymentPipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <selectedJob>TargetEnvironment</selectedJob>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle>pipeline</buildViewTitle>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+      <owner class="hudson" reference="../../.."/>
+      <name>pipe</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>All</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
