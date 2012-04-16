@@ -51,7 +51,7 @@
 echo $instance_ip
 
 cd $WORKSPACE/deployment/
-cap deploy
+cap deploy:deploy
 
 pwd
 ls</command>
