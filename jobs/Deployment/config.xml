@@ -51,10 +51,7 @@
 echo $instance_ip
 
 cd $WORKSPACE/deployment/
-cap deploy:deploy
-
-pwd
-ls</command>
+cap deploy:deploy</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
