@@ -4,8 +4,8 @@
   <profiles>
     <hudson.plugins.s3.S3Profile>
       <name>stelligentlabs</name>
-      <accessKey>AKIAJFZQBVNQF7EUER6A</accessKey>
-      <secretKey>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</secretKey>
+      <accessKey>AKIAIA6J23Q7RZ4GKXKA</accessKey>
+      <secretKey>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</secretKey>
     </hudson.plugins.s3.S3Profile>
   </profiles>
 </hudson.plugins.s3.S3BucketPublisher_-DescriptorImpl>
