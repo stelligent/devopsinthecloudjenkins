@@ -35,17 +35,6 @@
       <buildViewTitle></buildViewTitle>
       <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
     </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-      <owner class="hudson" reference="../../.."/>
-      <name>PMD Pipeline</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <selectedJob>TargetEnvironment</selectedJob>
-      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
-      <buildViewTitle>Delivery Pipeline</buildViewTitle>
-      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
-    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>All</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
