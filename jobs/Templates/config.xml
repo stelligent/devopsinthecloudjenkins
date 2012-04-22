@@ -49,30 +49,18 @@
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <builders>
-    <hudson.tasks.Shell>
-      <command>ls</command>
-    </hudson.tasks.Shell>
-  </builders>
+  <builders/>
   <publishers>
     <hudson.plugins.s3.S3BucketPublisher>
       <profileName>stelligentlabs</profileName>
       <entries>
         <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs/scripts/</bucket>
-          <sourceFile>scripts/sqs_receive_message.rb</sourceFile>
+          <bucket>stelligentlabs/templates/</bucket>
+          <sourceFile>infrastructure/templates/target.template</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs/scripts/</bucket>
-          <sourceFile>scripts/sqs_send_message.rb</sourceFile>
-        </hudson.plugins.s3.Entry>
-        <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs/scripts/</bucket>
-          <sourceFile>scripts/terminate.rb</sourceFile>
-        </hudson.plugins.s3.Entry>
-        <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs/scripts/</bucket>
-          <sourceFile>scripts/jenkins_versioning.sh</sourceFile>
+          <bucket>stelligentlabs/templates/</bucket>
+          <sourceFile>infrastructure/templates/jenkins.template</sourceFile>
         </hudson.plugins.s3.Entry>
       </entries>
     </hudson.plugins.s3.S3BucketPublisher>
