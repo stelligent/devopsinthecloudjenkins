@@ -53,7 +53,7 @@ echo $instance_ip
 cd $WORKSPACE/deployment/
 cap deploy:setup
 
-cucumber $WORKSPACE/test/features/target.feature env_ip=$instance_ip env_user=ec2-user</command>
+cucumber $WORKSPACE/test/features/target.feature env_ip=target.devopclouds.com env_user=ec2-user</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
