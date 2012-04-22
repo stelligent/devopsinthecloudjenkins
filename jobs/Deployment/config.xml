@@ -49,6 +49,7 @@
     <hudson.tasks.Shell>
       <command>instance_ip=`ruby /usr/share/tomcat6/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY`
 echo $instance_ip
+cucumber $WORKSPACE/test/features/deployment.feature env_ip=$instance_ip env_user=ec2-user
 
 cd $WORKSPACE/deployment/
 cap deploy:deploy</command>
