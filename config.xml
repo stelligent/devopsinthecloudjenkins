@@ -27,6 +27,7 @@
     <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
       <owner class="hudson" reference="../../.."/>
       <name>CDPipeline</name>
+      <description>This pipeline calls the TargetEnvironment job. After the TargetEnvironment is successful, it runs the Deployment. The Deployment job gets deployment artifacts from an Amazon S3 bucket. The Build job - which runs on a &quot;continuous&quot; basis, pushes the zip file to S3 so that it can be used by the Deployment job.</description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>

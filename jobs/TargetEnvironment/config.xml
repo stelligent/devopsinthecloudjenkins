@@ -49,8 +49,14 @@
     <hudson.tasks.Shell>
       <command>cucumber $WORKSPACE/test/features/target.feature env_ip=${test_InstanceIPAddress} env_user=ec2-user
 
-ruby /usr/share/tomcat6/sqs_send_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY ${test_InstanceIPAddress}
-ruby /usr/share/tomcat6/sqs_send_message.rb CloudFormationStacks $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY ${test_StackName}</command>
+ruby /usr/share/tomcat6/sqs_send_message.rb Deployment ${test_InstanceIPAddress}
+ruby /usr/share/tomcat6/sqs_send_message.rb CloudFormationStacks ${test_StackName}</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>echo &quot;domain=${test_Domain}&quot; &gt;&gt; /tmp/properties
+echo &quot;artifact_bucket=${test_ArtifactBucket}&quot; &gt;&gt; /tmp/properties
+
+ruby /usr/share/tomcat6/simpledb.rb</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>

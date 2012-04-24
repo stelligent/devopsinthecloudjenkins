@@ -51,7 +51,7 @@
 echo $instance_ip
 
 cd $WORKSPACE/deployment/
-cap deploy:setup $ACCESS_KEY $SECRET_ACCESS_KEY
+cap deploy:setup
 
 cucumber $WORKSPACE/test/features/deployment.feature env_ip=$instance_ip env_user=ec2-user</command>
     </hudson.tasks.Shell>
