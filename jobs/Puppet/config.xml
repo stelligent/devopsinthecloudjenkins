@@ -51,8 +51,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ls
-tar -czvf puppet.tar.gz modules/*</command>
+      <command>tar -czvf puppet.tar.gz modules/*</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
