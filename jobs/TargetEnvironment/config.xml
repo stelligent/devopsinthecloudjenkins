@@ -3,7 +3,22 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>PrivateBucket</name>
+          <description></description>
+          <defaultValue>stelligentlabs-private</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PublicBucket</name>
+          <description></description>
+          <defaultValue>stelligentlabs</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.plugins.git.GitSCM">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
@@ -76,7 +91,7 @@ ruby /usr/share/tomcat6/scripts/aws/create_config_domain.rb</command>
           <stackName>test</stackName>
           <description>test stack</description>
           <cloudFormationRecipe>infrastructure/templates/target.template</cloudFormationRecipe>
-          <parameters></parameters>
+          <parameters>PublicBucket=${PublicBucket}, PrivateBucket=${PrivateBucket}</parameters>
           <timeout>2500</timeout>
           <awsAccessKey>$AWS_ACCESS_KEY</awsAccessKey>
           <awsSecretKey>$AWS_SECRET_ACCESS_KEY</awsSecretKey>
