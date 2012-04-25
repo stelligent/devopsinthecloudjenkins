@@ -45,7 +45,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
     <hudson.triggers.SCMTrigger>
-      <spec>5 * * * *</spec>
+      <spec>* * * * *</spec>
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
@@ -55,12 +55,24 @@
       <profileName>stelligentlabs</profileName>
       <entries>
         <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs/templates/</bucket>
+          <bucket>stelligentlabs/templates</bucket>
           <sourceFile>infrastructure/templates/target.template</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs/templates/</bucket>
+          <bucket>stelligentlabs/templates</bucket>
           <sourceFile>infrastructure/templates/jenkins.template</sourceFile>
+        </hudson.plugins.s3.Entry>
+        <hudson.plugins.s3.Entry>
+          <bucket>stelligentlabs/templates</bucket>
+          <sourceFile>infrastructure/templates/account_bucket_policies.template</sourceFile>
+        </hudson.plugins.s3.Entry>
+        <hudson.plugins.s3.Entry>
+          <bucket>stelligentlabs/templates</bucket>
+          <sourceFile>infrastructure/templates/myjenkins.template</sourceFile>
+        </hudson.plugins.s3.Entry>
+        <hudson.plugins.s3.Entry>
+          <bucket>stelligentlabs/templates</bucket>
+          <sourceFile>infrastructure/templates/mytarget.template</sourceFile>
         </hudson.plugins.s3.Entry>
       </entries>
     </hudson.plugins.s3.S3BucketPublisher>

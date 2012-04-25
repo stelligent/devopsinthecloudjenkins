@@ -47,7 +47,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>instance_ip=`ruby /usr/share/tomcat6/scripts/aws/sqs_receive_message.rb Deployment $AWS_ACCESS_KEY $AWS_SECRET_ACCESS_KEY`
+      <command>instance_ip=`ruby /usr/share/tomcat6/scripts/aws/sqs_receive_message.rb Deployment`
 echo $instance_ip
 
 cd $WORKSPACE/deployment/
