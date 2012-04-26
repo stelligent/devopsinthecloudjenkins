@@ -2,7 +2,11 @@
 <hudson.tasks.Mailer_-DescriptorImpl>
   <helpRedirect/>
   <hudsonUrl>http://23.21.120.137:8080/jenkins/</hudsonUrl>
-  <adminAddress>address not configured yet &lt;nobody@nowhere&gt;</adminAddress>
-  <useSsl>false</useSsl>
+  <smtpAuthUsername>paul.duvall@stelligent.com</smtpAuthUsername>
+  <smtpAuthPassword>ZOj5ibom3/cDJEjz4FUupKcwDyvaXr4i3yrnJ2uTojc=</smtpAuthPassword>
+  <adminAddress>admin@stelligent.com</adminAddress>
+  <smtpHost>smtp.gmail.com</smtpHost>
+  <useSsl>true</useSsl>
+  <smtpPort>465</smtpPort>
   <charset>UTF-8</charset>
 </hudson.tasks.Mailer_-DescriptorImpl>
