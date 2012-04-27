@@ -77,6 +77,17 @@
         </hudson.plugins.view.dashboard.stats.StatBuilds>
       </bottomPortlets>
     </hudson.plugins.view.dashboard.Dashboard>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+      <owner class="hudson" reference="../../.."/>
+      <name>MyPipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <selectedJob>CreateEnvironment</selectedJob>
+      <noOfDisplayedBuilds>2</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>All</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
