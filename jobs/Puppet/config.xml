@@ -59,7 +59,7 @@
       <profileName>stelligentlabs</profileName>
       <entries>
         <hudson.plugins.s3.Entry>
-          <bucket>stelligentlabs</bucket>
+          <bucket>sealabs</bucket>
           <sourceFile>puppet.tar.gz</sourceFile>
         </hudson.plugins.s3.Entry>
       </entries>
