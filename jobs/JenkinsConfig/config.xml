@@ -55,27 +55,27 @@
       <profileName>stelligentlabs</profileName>
       <entries>
         <hudson.plugins.s3.Entry>
-          <bucket>sealabs/scripts/aws</bucket>
+          <bucket>bsjartifacts/scripts/aws</bucket>
           <sourceFile>scripts/aws/sqs_receive_message.rb</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>sealabs/scripts/aws</bucket>
+          <bucket>bsjartifacts/scripts/aws</bucket>
           <sourceFile>scripts/aws/sqs_send_message.rb</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>sealabs/scripts/aws</bucket>
+          <bucket>bsjartifacts/scripts/aws</bucket>
           <sourceFile>scripts/aws/terminate.rb</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>sealabs/scripts/aws</bucket>
+          <bucket>bsjartifacts/scripts/aws</bucket>
           <sourceFile>scripts/jenkins/jenkins_versioning.sh</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>sealabs/scripts/aws</bucket>
+          <bucket>bsjartifacts/scripts/aws</bucket>
           <sourceFile>scripts/aws/create_config_domain.rb</sourceFile>
         </hudson.plugins.s3.Entry>
         <hudson.plugins.s3.Entry>
-          <bucket>sealabs/scripts/aws</bucket>
+          <bucket>bsjartifacts/scripts/aws</bucket>
           <sourceFile>scripts/aws/showback_domain.rb</sourceFile>
         </hudson.plugins.s3.Entry>
       </entries>
