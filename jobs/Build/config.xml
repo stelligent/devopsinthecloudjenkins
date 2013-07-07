@@ -69,7 +69,7 @@ rspec spec/
       <profileName>stelligentlabs</profileName>
       <entries>
         <hudson.plugins.s3.Entry>
-          <bucket>bsjartifacts</bucket>
+          <bucket>ditcbsjartifacts</bucket>
           <sourceFile>devopsinthecloud.tar.gz</sourceFile>
         </hudson.plugins.s3.Entry>
       </entries>
