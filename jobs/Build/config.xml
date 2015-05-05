@@ -57,7 +57,7 @@ bundle install</command>
     <hudson.tasks.Shell>
       <command>rake db:migrate
 rake db:test:prepare
-rspec spec/
+/usr/share/tomcat6/bin/rspec spec/
 </command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
@@ -69,7 +69,7 @@ rspec spec/
       <profileName>stelligentlabs</profileName>
       <entries>
         <hudson.plugins.s3.Entry>
-          <bucket>ditcbsjartifacts</bucket>
+          <bucket>ditcnjdartifacts</bucket>
           <sourceFile>devopsinthecloud.tar.gz</sourceFile>
         </hudson.plugins.s3.Entry>
       </entries>
