@@ -58,6 +58,7 @@ bundle install</command>
       <command>rake db:migrate
 rake db:test:prepare
 /usr/share/tomcat6/bin/rspec spec/
+~/bin/rspec spec/
 </command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
