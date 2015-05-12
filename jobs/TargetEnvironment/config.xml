@@ -19,12 +19,7 @@
         <hudson.model.StringParameterDefinition>
           <name>KeyName</name>
           <description></description>
-          <defaultValue>ditc.pem</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>HostedZone</name>
-          <description></description>
-          <defaultValue>devopscloud.com</defaultValue>
+          <defaultValue>ditc</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -101,7 +96,7 @@ ruby /usr/share/tomcat6/scripts/aws/create_config_domain.rb</command>
           <stackName>test</stackName>
           <description>test stack</description>
           <cloudFormationRecipe>infrastructure/templates/target.template</cloudFormationRecipe>
-          <parameters>PublicBucket=${PublicBucket}, PrivateBucket=${PrivateBucket},KeyName=${KeyName},HostedZone=${HostedZone}</parameters>
+          <parameters>PublicBucket=${PublicBucket}, PrivateBucket=${PrivateBucket},KeyName=${KeyName}</parameters>
           <timeout>2500</timeout>
           <awsAccessKey>$AWS_ACCESS_KEY</awsAccessKey>
           <awsSecretKey>$AWS_SECRET_ACCESS_KEY</awsSecretKey>
